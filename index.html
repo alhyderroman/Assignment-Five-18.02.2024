@@ -8,9 +8,80 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/smartTicket.css">
+    
 </head>
 
-<body>
+<body class="mx-36">
+    <nav class="flex justify-between border mt-12 ">
+        <div> 
+            <h1 class="text-black font-raleway text-2xl font-bold">P-Ticket</h1>
+        </div>
+        <div class=" text-black flex gap-3">
+           <a href=""><p>Home</p></a> 
+           <a href=""><p>About</p></a> 
+            <a href=""><p>Destination</p></a>
+            <a href=""><p>Search</p></a>
+        </div>    
+        <div class="flex gap-1">
+            <p class="text-[#1DD100]">Bus</p>
+            <img src="images/bus-icon.png" alt="">
+        </div>
+    </nav>
+    <section >
+        <div class="min-h-[550px] bg-[url(images/banner.png)] bg-no-repeat bg-center  flex flex-col justify-center items-center gap-3">
+            <div class=" flex flex-col  items-center  font-bold text-5xl ">
+                <h1 class="text-white">End-to-End Travel With</h1>
+                <h1 class="text-[#1DD100]">P Paribahan</h1>
+            </div>
+            
+            <div>
+                <p class="text-white"> P-Paribahan is a renowned Bus paribahan in Bangladesh since 1996</p>
+            </div>
+            <div>
+                <button class="btn bg-[#1DD100] text-black">Buy Tickets</button>
+            </div>
+        </div>
+    </section>
+    <section class="mt-28">
+        <h1 class="text-center text-3xl text-black font-semibold mb-3"> Best Offers for you</h1>
+        <div class="flex  justify-between gap-3">
+            <div>
+                <div class="card w-[460px] bg-[#FFBF0F] text-neutral-content">
+                    <div class="card-body items-center text-center">
+                      <div class=" flex justify-between font-raleway card-actions  text-black">
+                        <div> 
+                            <p class="font-bold text-2xl">15% OFF </p>
+                            <p class="font-bold text-2xl">on your next purchase </p>
+                            <p>use by February 2024</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-2xl">NEW 15</p>
+                            <p>Coupon Code</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div>
+                <div class="card w-[460px] bg-[#F78C9C] text-neutral-content">
+                    <div class="card-body items-center text-center">
+                      <div class=" flex justify-between font-raleway card-actions  text-black">
+                        <div> 
+                            <p class="font-bold text-2xl">20% OFF </p>
+                            <p class="font-bold text-2xl">on your next purchase </p>
+                            <p>use by February 2024</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-2xl">Couple 20</p>
+                            <p>Coupon Code</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+        </div>
+    </section>
+
     
 <script src="scripts/smartTicket.js"></script>
 </body>
