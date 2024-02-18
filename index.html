@@ -8,32 +8,41 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/smartTicket.css">
-    
+
 </head>
 
 <body class="mx-36">
     <nav class="flex justify-between border mt-12 ">
-        <div> 
+        <div>
             <h1 class="text-black font-raleway text-2xl font-bold">P-Ticket</h1>
         </div>
         <div class=" text-black flex gap-3">
-           <a href=""><p>Home</p></a> 
-           <a href=""><p>About</p></a> 
-            <a href=""><p>Destination</p></a>
-            <a href=""><p>Search</p></a>
-        </div>    
+            <a href="">
+                <p>Home</p>
+            </a>
+            <a href="">
+                <p>About</p>
+            </a>
+            <a href="">
+                <p>Destination</p>
+            </a>
+            <a href="">
+                <p>Search</p>
+            </a>
+        </div>
         <div class="flex gap-1">
             <p class="text-[#1DD100]">Bus</p>
             <img src="images/bus-icon.png" alt="">
         </div>
     </nav>
-    <section >
-        <div class="min-h-[550px] bg-[url(images/banner.png)] bg-no-repeat bg-center  flex flex-col justify-center items-center gap-3">
+    <section>
+        <div
+            class="min-h-[550px] bg-[url(images/banner.png)] bg-no-repeat bg-center  flex flex-col justify-center items-center gap-3">
             <div class=" flex flex-col  items-center  font-bold text-5xl ">
                 <h1 class="text-white">End-to-End Travel With</h1>
                 <h1 class="text-[#1DD100]">P Paribahan</h1>
             </div>
-            
+
             <div>
                 <p class="text-white"> P-Paribahan is a renowned Bus paribahan in Bangladesh since 1996</p>
             </div>
@@ -48,42 +57,75 @@
             <div>
                 <div class="card w-[460px] bg-[#FFBF0F] text-neutral-content">
                     <div class="card-body items-center text-center">
-                      <div class=" flex justify-between font-raleway card-actions  text-black">
-                        <div> 
-                            <p class="font-bold text-2xl">15% OFF </p>
-                            <p class="font-bold text-2xl">on your next purchase </p>
-                            <p>use by February 2024</p>
+                        <div class=" flex justify-between font-raleway card-actions  text-black">
+                            <div>
+                                <p class="font-bold text-2xl">15% OFF </p>
+                                <p class="font-bold text-2xl">on your next purchase </p>
+                                <p>use by February 2024</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl">NEW 15</p>
+                                <p>Coupon Code</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-bold text-2xl">NEW 15</p>
-                            <p>Coupon Code</p>
-                        </div>
-                      </div>
                     </div>
-                  </div> 
+                </div>
             </div>
             <div>
                 <div class="card w-[460px] bg-[#F78C9C] text-neutral-content">
                     <div class="card-body items-center text-center">
-                      <div class=" flex justify-between font-raleway card-actions  text-black">
-                        <div> 
-                            <p class="font-bold text-2xl">20% OFF </p>
-                            <p class="font-bold text-2xl">on your next purchase </p>
-                            <p>use by February 2024</p>
+                        <div class=" flex justify-between font-raleway card-actions  text-black">
+                            <div>
+                                <p class="font-bold text-2xl">20% OFF </p>
+                                <p class="font-bold text-2xl">on your next purchase </p>
+                                <p>use by February 2024</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl">Couple 20</p>
+                                <p>Coupon Code</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-bold text-2xl">Couple 20</p>
-                            <p>Coupon Code</p>
-                        </div>
-                      </div>
                     </div>
-                  </div> 
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><button class=" mt-1 btn text-[#1DD100] border-[#1DD100]">see all offers</button>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="font-raleway text-4xl font-bold text-center mt-28">P.H Paribahan</h1>
+        <p class="font-inter text-center text-xs"> You can see schedule of buses, price of ticket and number of seats
+            available here.</p>
+        <div class="flex justify-between mt-20">
+            <div class="flex flex-initial">
+                <div>
+                    <img src="images/bus-logo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-Raleway text-2xl font-bold">Geenline Paribahan</h1>
+                    <p class="text-xs"> Coach-009-WEB! AC_Business</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row">
+                <div> <img src="images/seat-green.png" alt=""></div>
+
+                <p class="text-[#1DD100]"><span>40</span>seats left</p>
+
+            </div>
+            <div class="flex flex-col justify-center content-center items-center">
+                <div class=""> <img src="images/fare.png" alt=""></div>
+                <div >
+                    <h1 class=" font-raleway font-semibold text-2xl text-center">550 taka</h1>
+                    <p class="font-raleway text-base text-center">per seat</p>
+                </div>
             </div>
         </div>
     </section>
 
-    
-<script src="scripts/smartTicket.js"></script>
+
+    <script src="scripts/smartTicket.js"></script>
 </body>
 
 </html>
