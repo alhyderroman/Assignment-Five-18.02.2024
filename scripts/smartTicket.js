@@ -8,6 +8,10 @@ function removeBackgroundColorById(elementId){
     element.classList.remove('bg-[#1DD100]');
 
 }
+
+
+
+
 let count=0;
 let seat=40;
 let total=0;
@@ -18,7 +22,9 @@ for(const btn of allBtn){
    
             return;
            }
-       console.log(btn.classList);
+        
+       
+       
         count=count+1;
         seat=seat-1;
         total=total+550;
@@ -29,7 +35,7 @@ for(const btn of allBtn){
         
         //adding rows
        
-     console.log(event.target.innerText);
+    
      const tBody=document.getElementById('tbody');
      const tr=document.createElement('tr');
    const td1=document.createElement('td');
@@ -68,8 +74,7 @@ document.getElementById('grand-total').innerText=total;
     const grandTotalElement=document.getElementById('grand-total');
     const grandTotalText=grandTotalElement.innerText;
     let grandTotal=parseInt(grandTotalText);
-    const phone=document.getElementById('phone-number').innerText;
-    const phoneNumber=phone.length;
+    
     
     if(couponValue=='NEW15' ){
       const grandTotalnew=grandTotal-grandTotal*.15;
@@ -79,7 +84,7 @@ document.getElementById('grand-total').innerText=total;
 
 
     }
-    else if(couponValue=='Couple20'){
+    else if(couponValue=='Couple 20'){
         
             const grandTotalnew=grandTotal-grandTotal*.20;
              document.getElementById('grand-total').innerText=grandTotalnew;
@@ -91,10 +96,26 @@ document.getElementById('grand-total').innerText=total;
     }
    };
 
-   function nextButto(){
-    console.log('Hello how are you');
-   }
+      // next button condition
+      const nextButton =document.getElementById('next-btn');
+      const phone=document.getElementById('mobile-number');
+      nextButton.disabled=true;
 
+     
+      phone.addEventListener('input',function(){
+        for(const button of allBtn){
+            button.addEventListener('click',function(){
+                if(phone.value.length===11){
+            
+                    nextButton.disabled=false;
+                  } 
+            })
+        }
+      });
+   
+    //   continue button condition
+
+    
    
    
 
