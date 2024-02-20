@@ -108,10 +108,11 @@
                 </div>
             </div>
 
-            <div class="flex flex-row">
+            <div class="flex flex-row min-w-fit">
                 <div> <img src="images/seat-green.png" alt=""></div>
-
-                <p class="text-[#1DD100]"><span id="current-seat">40</span>seats left</p>
+                <div>
+                    <p class="text-[#1DD100]"><span id="current-seat">40</span>seats left</p>
+                </div>
 
             </div>
             <div class="flex flex-col justify-center content-center items-center">
@@ -124,100 +125,147 @@
         </div>
     </section>
     <section class="mt-14">
-       <div class="flex justify-around">
-        <div>
-<h1>Select your seat</h1>
-        </div>
-        <div >
-<h1>Select your seat</h1>
-        </div>
+        <div class="flex justify-around">
+            <div>
+                <h1>Select your seat</h1>
+            </div>
+            <div>
+                <h1>Select your seat</h1>
+            </div>
 
-       </div>  
- <!-- seat section -->
-       <div class="flex justify-evenly">
-       <div class="border-r-8 border-black border-dotted">
-        <div class="flex justify-between gap-36 w-full ">
-            <div class="flex">
-                <div><img src="images/seat-gray.png" alt=""></div>
-                <div>Available</div>
-            </div>
-            <div class="flex flex-col"> 
-                <div> 
+        </div>
+        <!-- seat section -->
+        <div class="flex justify-evenly">
+            <div class="border-r-8 border-black border-dotted">
+                <div class="flex justify-between gap-36 w-full ">
                     <div class="flex">
-                        <div><img src="images/seat-green-filled.png" alt=""></div>
-                        <div>selected</div>
+                        <div><img src="images/seat-gray.png" alt=""></div>
+                        <div>Available</div>
                     </div>
+                    <div class="flex flex-col">
+                        <div>
+                            <div class="flex">
+                                <div><img src="images/seat-green-filled.png" alt=""></div>
+                                <div>selected</div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="">
-                    <img src="images/Vector.png" alt="">
+                <div class="flex flex-row gap-20 justify-center w-full">
+                    <div class="flex">
+                        <div class="flex flex-col justify-center gap-1 my-1 w-full">
+                            <button class="seat-btn"><kbd class="kbd">A1</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">B1</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">C1</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">D1</kbd></button>
+
+                        </div>
+                        <div class="flex flex-col justify-center gap-1 my-1 w-full">
+                            <button  class=" seat-btn"><kbd class="kbd">A2</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">B2</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">C2</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">D2</kbd></button>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex flex-col justify-center gap-1 my-1 w-full">
+                            <button class="seat-btn"><kbd class="kbd">A3</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">B3</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">C3</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">D3</kbd></button>
+                        </div>
+                        <div class="flex flex-col justify-center gap-1 my-1 w-full">
+                            <button class="seat-btn"><kbd class="kbd">A4</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">B4</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">C4</kbd></button>
+                            <button class="seat-btn"><kbd class="kbd">D4</kbd></button>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-           
-            
-        </div>
-        <div class="flex flex-row gap-20 justify-center w-full">
-            <div class="flex">
-                <div class="flex flex-col justify-center gap-1 my-1 w-full">
-                    <button class="seat-btn"><kbd class="kbd">A1</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">B1</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">C1</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">D1</kbd></button>
-                    
-                  </div> 
-                  <div class="flex flex-col justify-center gap-1 my-1 w-full">
-                    <button class="seat-btn"><kbd class="kbd">A2</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">B2</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">C2</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">D2</kbd></button>
-                  </div> 
-            </div>
-            <div class="flex">
-                <div class="flex flex-col justify-center gap-1 my-1 w-full">
-                    <button class="seat-btn"><kbd class="kbd">A3</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">B3</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">C3</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">D3</kbd></button>
-                  </div> 
-                  <div class="flex flex-col justify-center gap-1 my-1 w-full">
-                    <button class="seat-btn"><kbd class="kbd">A4</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">B4</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">C4</kbd></button>
-                    <button class="seat-btn"><kbd class="kbd">D4</kbd></button>
-                  </div> 
-            </div>
-            
-              
-        </div>
-       </div>
-        
-       
-        
-        <div>
-            <div class="overflow-x-auto" >
-                <table class="table">
-                  <!-- head -->
-                  <thead>
-                    <tr class="font-medium font-inter text-lg border ">
-                      <th></th>
-                      <th>Seat <span id="seat-selected" class="bg-[]">0</span></th>
-                      <th>Class</th>
-                      <th>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- row 1 -->
-                    <!-- <tr>
+
+
+
+            <div>
+                <div class="overflow-x-auto">
+                    <table class="table">
+                        <!-- head -->
+                        <thead>
+                            <tr class="font-medium font-inter text-lg border-b">
+                                <th >Seat <span id="seat-selected" class="bg-[#1DD100]">0</span></th>
+                                
+                                <th >Class</th>
+                                
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <!-- row 1 -->
+                            <!-- <tr>
                       <th>1</th>
                       <td>Cy Ganderton</td>
                       <td>Quality Control Specialist</td>
                       <td>Blue</td>
                     </tr> -->
-                   
-                  </tbody>
-                </table>
-              </div>
+                     <tr id="total-price">
+                        <td colspan="2">Total Price:</td>
+                        <td></td>
+    
+                        <td > BDT<span id="total">0</span></td>
+                     </tr>
+                     <tr id="coupon-row">
+                        <td colspan="2"><input id="coupon-value" type="text" placeholder="Have any coupon?"></td>
+                       <td colspan="2"><button onclick="couponApply()" id="coupon-btn" class="btn text-white bg-[#1DD100] border-3 "> Apply</button></td> 
+                     </tr>
+                     <tr>
+                        <td colspan="2">Grand Total</td>
+                        <td></td>
+                        <td>BDT<span id="grand-total">0</span></td>
+                     </tr>
+
+                    
+
+                        </tbody>
+                       
+                    </table>
+                    <h3>Passenger Name:</h3>
+                    <input class="border" type="text " placeholder="Enter your name">
+                    <h3>Phone Number:</h3>
+                    <input id="phone-number" type="text" placeholder="Enter your phone number.">
+                    <h3>Email Id:</h3>
+                    <input type="text" placeholder="Enter your email id">
+                    
+                  
+                    
+
+                    
+                </div >
+                
+                <!-- Open the modal using ID.showModal() method -->
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-[#1DD100]" onclick="my_modal_1.showModal()">NEXT</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                
+            </div>
         </div>
-       </div>
 
     </section>
 
