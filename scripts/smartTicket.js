@@ -14,10 +14,11 @@ let total=0;
 const allBtn=document.getElementsByClassName('seat-btn');
 for(const btn of allBtn){
     btn.addEventListener('click',function(event){
-        if(count>=4){
+        if(count>=4 ||btn.classList.contains('bg-[#1DD100]')){
    
             return;
            }
+       console.log(btn.classList);
         count=count+1;
         seat=seat-1;
         total=total+550;
@@ -47,8 +48,7 @@ for(const btn of allBtn){
    console.log(tBody);
 
    //adding color
-   const element=event.target;
-   element.classList.add('bg-[#1DD100]');
+btn.classList.add('bg-[#1DD100]');
        
  //showing total price
  document.getElementById('total').innerText=total;
