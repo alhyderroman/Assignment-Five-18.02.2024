@@ -62,6 +62,9 @@ btn.classList.add('bg-[#1DD100]');
 
 //  showing grand total price
 document.getElementById('grand-total').innerText=total;
+
+
+ 
  
 
     })
@@ -96,28 +99,32 @@ document.getElementById('grand-total').innerText=total;
     }
    };
 
-      // next button condition
+    //   next button condition
       const nextButton =document.getElementById('next-btn');
       const phone=document.getElementById('mobile-number');
       nextButton.disabled=true;
+   
 
-     
-      phone.addEventListener('input',function(){
-        for(const button of allBtn){
-            button.addEventListener('click',function(){
-                if(phone.value.length===11){
+for (const button of allBtn){
+    button.addEventListener('click',function(){
+        phone.addEventListener('input',function(){
+            if(phone.value.length===11){
             
-                    nextButton.disabled=false;
-                  } 
-            })
-        }
-      });
-   
-    //   continue button condition
+                nextButton.disabled=false;
+              }
+        })
+    })
+}
 
-    
-   
-   
-
+//continue button
+document.getElementById('continue-btn').addEventListener('click',function(){
+    location.reload();
+})
 
 
+// buy ticket button
+const buyTicket=document.getElementById('buy-ticket');
+buyTicket.addEventListener('click',function(){
+    const sectionId=document.getElementById('seat-section');
+    buyTicket.scrollIntoView(sectionId);
+})
