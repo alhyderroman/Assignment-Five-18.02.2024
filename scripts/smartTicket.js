@@ -47,7 +47,7 @@ for(const btn of allBtn){
    td2.innerText='Business';
    tr.appendChild(td2);
    const td3=document.createElement('td');
-   td3.innerText='500';
+   td3.innerText='550';
    tr.appendChild(td3);
    const totalPrice=document.getElementById('total-price');
    tBody.insertBefore(tr,totalPrice);
